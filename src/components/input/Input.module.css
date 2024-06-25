@@ -1,0 +1,13 @@
+.input {
+    background: var(--color-g-bg-tertiary);
+    border: .1rem solid #fc0;
+    border-radius: .8rem;
+    box-sizing: border-box;
+    color: #000;
+    display: flex;
+    height: 2.8rem;
+    position: relative;
+    width: 500px;
+    margin-bottom: 12px;
+    padding-left: 12px;
+}
