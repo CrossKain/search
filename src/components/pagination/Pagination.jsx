@@ -1,6 +1,6 @@
 
 import Button from '../button/Button'
-
+import s from "./Pagination.module.css"
 const Pagination = ({previewPages, pages, setCurrentPage, currentPage}) => {
     const onClick = (value) => {
         setCurrentPage(value)
@@ -17,7 +17,7 @@ const Pagination = ({previewPages, pages, setCurrentPage, currentPage}) => {
         }
     }
   return (
-    <div>
+    <div className={s.block}>
     <Button onClick={()=> handlePage("prev")}>
     ᐸ
     </Button>

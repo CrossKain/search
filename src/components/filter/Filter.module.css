@@ -1,0 +1,18 @@
+.select{
+    background: var(--color-g-bg-tertiary);
+    border: .1rem solid #fc0;
+}
+
+.paragraf{
+    font-size: 1rem;
+    color: #F3AE0F
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}

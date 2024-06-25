@@ -63,8 +63,10 @@ const MainPage = () => {
     <div className={s.main}>
       <form onSubmit={(event) => { event.preventDefault(); onClick() }}>
         <Input type="text" onChange={(e) => setValue(e.target.value)} value={value} placeholder="Введите логин" />
+        <div className={s.block}>
         <Filter filterValue={filterValue} setFilterValue={setFilterValue} />
         <PerPageFilter limit={limit} setLimit={setLimit} />
+        </div>
         <Button onClick={onClick}>
           Найти Репозитории
         </Button>
