@@ -1,4 +1,4 @@
-import React from 'react'
+
 import s from "./Repo.module.css"
 const Repo = ({avatar_url, login}) => {
   return (

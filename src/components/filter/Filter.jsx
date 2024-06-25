@@ -1,4 +1,4 @@
-import React from 'react'
+
 import s from "./Filter.module.css"
 const Filter = ({filterValue, setFilterValue}) => {
 const onChange = (e) => {

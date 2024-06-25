@@ -23,17 +23,14 @@ const InfoModal = ({login, id, avatar_url, html_url }) => {
     </div>
     Никнейм
         <p className={s.paragraf}>
-        
-            {login}
+        {login}
         </p>
         Айди
         <p className={s.id}>
-       
-            {id}
+        {id}
         </p>
         <img className={s.avatar} src={avatar_url}/>
         <a target="_blank" href={html_url}>Ссылка на репозиторий {login}</a>
-        
     </div>
     </div>
   )
