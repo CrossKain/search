@@ -49,14 +49,16 @@ const MainPage = () => {
     }
   }, [currentPage])
   const onClick = () => {
+
+    if (!value.trim()) {
+      return alert("Заполните поле")
+    }
     if(!isSearchStarted){
       setIsSearchStarted(true)
     }
     
-    if (!value.trim()) {
-      return alert("Заполните поле")
-    }
-   
+  
+
     getRepos({order: filterValue, user: value, page: currentPage, limit: limit })
   }
   return (
@@ -67,7 +69,7 @@ const MainPage = () => {
         <Filter filterValue={filterValue} setFilterValue={setFilterValue} />
         <PerPageFilter limit={limit} setLimit={setLimit} />
         </div>
-        <Button onClick={onClick}>
+        <Button>
           Найти Репозитории
         </Button>
       </form>
